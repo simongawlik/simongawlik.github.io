@@ -102,6 +102,8 @@ contains a `body` tag. If it does, we can get the height of the body and update
 `iframeHeight`. If not, we wait for 0.1 seconds and try again.
 
 When `iframeHeight` changes, we re-render the component.
+
+{% raw %}
 ```jsx
   render() {
     const { iframeHeight } = this.state;
@@ -140,6 +142,7 @@ When `iframeHeight` changes, we re-render the component.
     )
   }
 ```
+{% endraw %}
 
 I'm conditionally applying styles depending on whether we have a height to
 work with or not. Note that inline styles like this give us a small performance hit.

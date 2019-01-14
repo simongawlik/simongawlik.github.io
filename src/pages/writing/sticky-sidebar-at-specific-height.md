@@ -29,6 +29,7 @@ As always, you can jump right into the working example with code
 [here](https://codepen.io/simongawlik/pen/VqGmKQ) but we'll walk through it
 together below.
 
+{% raw %}
 ```jsx
 class App extends React.Component {
   constructor(props) {
@@ -76,6 +77,7 @@ class App extends React.Component {
   }
 }
 ```
+{% endraw %}
 
 We're tracking whether the `div` containing the sidebar, `.sticky-at-height`
 should be fixed under the header in `App`'s component state. This allows
